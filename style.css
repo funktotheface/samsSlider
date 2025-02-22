@@ -33,17 +33,26 @@
   transform: skewX(-3deg);
 }
 
+
+
 /*you can add your desired styling to each section here*/
 .section1 {
-  background-color: red;
+  /* background-color: red; */
+  background-image: url(bike1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .section2 {
-  background-color: blue;
+    background-image: url(bike2.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .section3 {
-  background-color: green;
+    background-image: url(bike3.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /*each section contains another div to hold the content, 
@@ -57,12 +66,20 @@ responsive margin to the content to stop it from cramping against the edge of th
   color: white;
 }
 
+.sectionContent > p {
+  display: none;
+}
+
 /*this handles the grow effect on hover*/
 .section1:hover,
 .section2:hover,
 .section3:hover {
+
   flex: 10;
+  filter: grayscale(100%);
+  
   transition: 0.3s ease-in-out;
+
 }
 
 /*this is the blur effect on hover*/
@@ -70,4 +87,19 @@ responsive margin to the content to stop it from cramping against the edge of th
 .container:hover .section2:not(:hover),
 .container:hover .section3:not(:hover) {
   filter: blur(2.5px);
+  
+}
+
+/* Make paragraphs visible when the section is hovered */
+.section1:hover .sectionContent > p,
+.section2:hover .sectionContent > p,
+.section3:hover .sectionContent > p {
+  display: block;
+}
+
+/* Make paragraphs visible when the section is hovered */
+.section1:hover .sectionContent,
+.section2:hover .sectionContent,
+.section3:hover .sectionContent {
+  backdrop-filter: blur(5px);
 }
