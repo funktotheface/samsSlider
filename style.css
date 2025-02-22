@@ -61,7 +61,6 @@ responsive margin to the content to stop it from cramping against the edge of th
 .section1:hover,
 .section2:hover,
 .section3:hover {
-  background-color: yellow;
   flex: 10;
   transition: 0.3s ease-in-out;
 }
