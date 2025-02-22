@@ -1,3 +1,5 @@
+/*these are just global settings for this preview, you shouldnt need to use these in your WP build*/
+
 .body {
   margin: 0;
   padding: 0;
@@ -9,43 +11,45 @@
   background-color: #f0f0f0;
 }
 
+/*this is the class for the div that is holding the three elements*/
 .container {
   margin: auto;
   display: flex;
   flex-direction: row;
-  /* flex-grow: 1; */
   width: 90vw;
   height: 50vh;
-  /* background-color: rgb(255, 255, 255); */
   justify-content: center;
 }
 
-.section1, .section2, .section3 {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s ease-in-out;
-    transform: skewX(-3deg);
+/*these rules are applied to all three sections so I'm targetting them all at once to reduce the amount of code*/
+.section1,
+.section2,
+.section3 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  transform: skewX(-3deg);
 }
 
+/*you can add your desired styling to each section here*/
 .section1 {
-  /* flex-grow: 1; */
   background-color: red;
-
 }
 
 .section2 {
-  /* flex-grow: 1; */
   background-color: blue;
 }
 
-
 .section3 {
   background-color: green;
-
 }
 
+/*each section contains another div to hold the content, 
+we are counteracting the skew on the parent div by skewing 
+the child div in the opposite direction and also applying a 
+responsive margin to the content to stop it from cramping against the edge of the section   */
 .sectionContent {
   margin: 0.5rem;
   transform: skewX(3deg);
@@ -53,6 +57,7 @@
   color: white;
 }
 
+/*this handles the grow effect on hover*/
 .section1:hover,
 .section2:hover,
 .section3:hover {
@@ -61,6 +66,7 @@
   transition: 0.3s ease-in-out;
 }
 
+/*this is the blur effect on hover*/
 .container:hover .section1:not(:hover),
 .container:hover .section2:not(:hover),
 .container:hover .section3:not(:hover) {
