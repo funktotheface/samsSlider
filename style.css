@@ -41,6 +41,7 @@
   background-image: url(bike1.jpg);
     background-size: cover;
     background-position: center;
+    background-transform: skewX(3deg);
 }
 
 .section2 {
