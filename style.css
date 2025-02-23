@@ -31,29 +31,27 @@
   justify-content: center;
   transition: 0.3s ease-in-out;
   transform: skewX(-3deg);
+  position: relative;
 }
-
-
 
 /*you can add your desired styling to each section here*/
 .section1 {
   /* background-color: red; */
   background-image: url(bike1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-transform: skewX(3deg);
+  background-size: cover;
+  background-position: center;
 }
 
 .section2 {
-    background-image: url(bike2.jpg);
-    background-size: cover;
-    background-position: center;
+  background-image: url(bike2.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .section3 {
-    background-image: url(bike3.jpg);
-    background-size: cover;
-    background-position: center;
+  background-image: url(bike3.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /*each section contains another div to hold the content, 
@@ -61,6 +59,8 @@ we are counteracting the skew on the parent div by skewing
 the child div in the opposite direction and also applying a 
 responsive margin to the content to stop it from cramping against the edge of the section   */
 .sectionContent {
+  position: relative;
+  z-index: 1;
   margin: 0.5rem;
   transform: skewX(3deg);
   text-align: center;
@@ -75,12 +75,10 @@ responsive margin to the content to stop it from cramping against the edge of th
 .section1:hover,
 .section2:hover,
 .section3:hover {
-
   flex: 10;
   filter: grayscale(100%);
-  
-  transition: 0.3s ease-in-out;
 
+  transition: 0.3s ease-in-out;
 }
 
 /*this is the blur effect on hover*/
@@ -88,7 +86,6 @@ responsive margin to the content to stop it from cramping against the edge of th
 .container:hover .section2:not(:hover),
 .container:hover .section3:not(:hover) {
   filter: blur(2.5px);
-  
 }
 
 /* Make paragraphs visible when the section is hovered */
@@ -103,4 +100,15 @@ responsive margin to the content to stop it from cramping against the edge of th
 .section2:hover .sectionContent,
 .section3:hover .sectionContent {
   backdrop-filter: blur(5px);
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the div */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Sends it behind the content */
 }
