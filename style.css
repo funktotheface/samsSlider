@@ -21,6 +21,7 @@
   justify-content: center;
 }
 
+
 /*these rules are applied to all three sections so I'm targetting them all at once to reduce the amount of code*/
 .section1,
 .section2,
@@ -32,6 +33,7 @@
   transition: 0.3s ease-in-out;
   transform: skewX(-3deg);
   position: relative;
+  overflow: hidden;
 }
 
 /*you can add your desired styling to each section here*/
@@ -102,13 +104,16 @@ responsive margin to the content to stop it from cramping against the edge of th
   backdrop-filter: blur(5px);
 }
 
+
 .background-video {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 110%;
   object-fit: cover; /* Ensures the video covers the div */
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) skewX(3deg);
   z-index: -1; /* Sends it behind the content */
+  
+  
 }
