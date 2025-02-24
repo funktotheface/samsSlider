@@ -11,6 +11,10 @@
   background-color: #f0f0f0;
 }
 
+
+ h1 {
+  color: blue;
+ }
 /*this is the class for the div that is holding the three elements*/
 .container {
   margin: auto;
@@ -78,7 +82,7 @@ responsive margin to the content to stop it from cramping against the edge of th
 .section2:hover,
 .section3:hover {
   flex: 10;
-  filter: grayscale(100%);
+ /* filter: grayscale(100%); */
 
   transition: 0.3s ease-in-out;
 }
@@ -101,6 +105,7 @@ responsive margin to the content to stop it from cramping against the edge of th
 .section1:hover .sectionContent,
 .section2:hover .sectionContent,
 .section3:hover .sectionContent {
+  object-fit: fill;
   backdrop-filter: blur(5px);
 }
 
@@ -116,4 +121,12 @@ responsive margin to the content to stop it from cramping against the edge of th
   z-index: -1; /* Sends it behind the content */
   
   
+}
+
+
+/* add video filters here */
+.section1:hover .background-video,
+.section2:hover .background-video,
+.section3:hover .background-video {
+  filter: grayscale(100%);
 }
