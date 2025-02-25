@@ -26,6 +26,7 @@
   width: 90vw;
   height: 50vh;
   justify-content: center;
+  /* background-color: aqua; */
 }
 
 
@@ -51,6 +52,7 @@
   background-image: url(bike1.jpg);
   background-size: cover;
   background-position: center;
+  margin-left: -1rem;
 }
 
 .section2 {
@@ -63,6 +65,7 @@
   background-image: url(bike3.jpg);
   background-size: cover;
   background-position: center;
+  margin-right: -1rem;
 }
 
 /*each section contains another div to hold the content, 
