@@ -26,4 +26,14 @@ sections.forEach((section) => {
   });
 });
 
+sections.forEach((section) => {
+  section.addEventListener("mouseenter", () => {
+    document.body.style.backgroundImage = "linear-gradient(rgb(51, 0, 0), rgb(0, 0, 0))";
+  });
+
+  section.addEventListener("mouseleave", () => {
+    document.body.style.backgroundImage = "linear-gradient(rgb(185, 3, 3), rgb(0, 0, 0))";
+  });
+});
+
 

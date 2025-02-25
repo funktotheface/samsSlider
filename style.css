@@ -9,8 +9,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: linear-gradient(rgb(185, 3, 3), rgb(0, 0, 0)), url(bike1.jpg);
+  background-image: linear-gradient(rgb(185, 3, 3), rgb(0, 0, 0));
+  
 }
+
+
 
 body p {
   color: white;
@@ -127,6 +130,7 @@ responsive margin to the content to stop it from cramping against the edge of th
 .section3:hover .sectionContent > p {
   display: block;
 }
+
 
 /* Make paragraphs visible when the section is hovered */
 .section1:hover .sectionContent,
