@@ -14,6 +14,9 @@
 
  h1 {
   color: blue;
+  font-family: "Audiowide", serif;
+  font-weight: 400;
+  font-style: normal;
  }
 /*this is the class for the div that is holding the three elements*/
 .container {
@@ -38,6 +41,8 @@
   transform: skewX(-3deg);
   position: relative;
   overflow: hidden;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 /*you can add your desired styling to each section here*/
@@ -123,10 +128,12 @@ responsive margin to the content to stop it from cramping against the edge of th
   
 }
 
-
+.background-video {
+  filter: grayscale(100%);
+}
 /* add video filters here */
 .section1:hover .background-video,
 .section2:hover .background-video,
 .section3:hover .background-video {
-  filter: grayscale(100%);
+  filter: grayscale(0%);
 }
