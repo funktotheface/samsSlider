@@ -18,10 +18,12 @@ sections.forEach((section) => {
 
   section.addEventListener("mouseenter", () => {
     video.play();
-    
+
   });
 
   section.addEventListener("mouseleave", () => {
     video.pause();
   });
 });
+
+
