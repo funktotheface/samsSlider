@@ -140,3 +140,33 @@ responsive margin to the content to stop it from cramping against the edge of th
 .section3:hover .background-video {
   filter: grayscale(0%);
 }
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .section1,
+  .section2,
+  .section3 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    transform: none; /* Remove skew on mobile */
+  }
+
+  .sectionContent {
+    transform: none; /* Remove skew on mobile */
+    margin: 1rem;
+  }
+
+  .background-video {
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+}
+
+
+
