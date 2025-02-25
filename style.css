@@ -145,7 +145,8 @@ responsive margin to the content to stop it from cramping against the edge of th
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    height: auto;
+    height: 50vh;
+
   }
 
   .section1,
