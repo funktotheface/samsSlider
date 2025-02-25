@@ -20,23 +20,14 @@ sections.forEach((section) => {
   section.addEventListener("mouseenter", () => {
     video.play();
    container.style.boxShadow = "0 0 20px 20px rgba(0, 0, 0, 0.5)";
+   document.body.style.backgroundImage = "linear-gradient(rgb(51, 0, 0), rgb(0, 0, 0))";
 
   });
 
   section.addEventListener("mouseleave", () => {
     video.pause();
     container.style.boxShadow = "none";
-  });
-});
-
-sections.forEach((section) => {
-  section.addEventListener("mouseenter", () => {
-    document.body.style.backgroundImage = "linear-gradient(rgb(51, 0, 0), rgb(0, 0, 0))";
-  });
-
-  section.addEventListener("mouseleave", () => {
     document.body.style.backgroundImage = "linear-gradient(rgb(185, 3, 3), rgb(0, 0, 0))";
   });
 });
-
 
