@@ -33,7 +33,17 @@ const sections = document.querySelectorAll(".section1, .section2, .section3");
 document.addEventListener("DOMContentLoaded", () => {
   sections.forEach((section) => {
     const video = section.querySelector(".background-video");
-    video.currentTime = 0.1; // Move slightly forward to force rendering
+
+    // Force load the video
+    video.load();
+
+    // Move slightly forward to force rendering
+    video.currentTime = 0.1; 
+
+    // Add an event listener to ensure video is visible
+    video.addEventListener("loadeddata", () => {
+      video.style.display = "block"; // Make sure it's visible
+    });
   });
 });
 
@@ -50,3 +60,4 @@ sections.forEach((section) => {
     section.style.boxShadow = "none";
   });
 });
+
