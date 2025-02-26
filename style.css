@@ -189,7 +189,7 @@ responsive margin to the content to stop it from cramping against the edge of th
   }
 
   .background-video {
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     z-index: 0;
   }
 }
