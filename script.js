@@ -20,14 +20,11 @@ sections.forEach((section) => {
   section.addEventListener("mouseenter", () => {
     video.play();
     section.style.boxShadow = "0 0 100rem 100rem rgba(0, 0, 0, 0.7)";
-
-
   });
 
   section.addEventListener("mouseleave", () => {
     video.pause();
-    section.style.boxShadow = "none";
-    
+    section.style.boxShadow = "none";  
   });
 });
 
