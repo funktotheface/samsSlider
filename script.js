@@ -27,14 +27,13 @@
 //   });
 // });
 
-
 const sections = document.querySelectorAll(".section1, .section2, .section3");
 
-// Ensure videos play on mobile when the page loads
+// Ensure videos load their first frame without autoplaying
 document.addEventListener("DOMContentLoaded", () => {
   sections.forEach((section) => {
     const video = section.querySelector(".background-video");
-    video.play().catch((error) => console.log("Autoplay blocked:", error));
+    video.currentTime = 0.1; // Move slightly forward to force rendering
   });
 });
 
