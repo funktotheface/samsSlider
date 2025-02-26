@@ -72,20 +72,20 @@ body p {
 /*you can add your desired styling to each section here*/
 .section1 {
   /* background-color: red; */
-  background-image: url(bike1.jpg);
+  /* background-image: url(bike1.jpg); */
   background-size: cover;
   background-position: center;
   margin-left: -1rem;
 }
 
 .section2 {
-  background-image: url(bike2.jpg);
+  /* background-image: url(bike2.jpg); */
   background-size: cover;
   background-position: center;
 }
 
 .section3 {
-  background-image: url(bike3.jpg);
+  /* background-image: url(bike3.jpg); */
   background-size: cover;
   background-position: center;
   margin-right: -1rem;
