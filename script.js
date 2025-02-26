@@ -19,15 +19,15 @@ sections.forEach((section) => {
 
   section.addEventListener("mouseenter", () => {
     video.play();
-   container.style.boxShadow = "0 0 100rem 100rem rgba(0, 0, 0, 0.7)";
-  //  document.body.style.backgroundImage = "linear-gradient(rgb(51, 0, 0), rgb(0, 0, 0))";
+    section.style.boxShadow = "0 0 100rem 100rem rgba(0, 0, 0, 0.7)";
+
 
   });
 
   section.addEventListener("mouseleave", () => {
     video.pause();
-    container.style.boxShadow = "none";
-    // document.body.style.backgroundImage = "linear-gradient(rgb(185, 3, 3), rgb(0, 0, 0))";
+    section.style.boxShadow = "none";
+    
   });
 });
 
