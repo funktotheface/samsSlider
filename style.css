@@ -49,6 +49,7 @@ body p {
   height: 50vh;
   justify-content: center;
   /* background-color: aqua; */
+  transition: 0.3s ease-in-out;
 }
 
 
