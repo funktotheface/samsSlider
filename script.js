@@ -10,7 +10,6 @@
 //   });
 // });
 
-
 const sections = document.querySelectorAll(".section1, .section2, .section3");
 const container = document.querySelector(".container");
 
@@ -24,7 +23,6 @@ sections.forEach((section) => {
 
   section.addEventListener("mouseleave", () => {
     video.pause();
-    section.style.boxShadow = "none";  
+    section.style.boxShadow = "none";
   });
 });
-
